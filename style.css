@@ -1,0 +1,37 @@
+:root {
+    --copper: hsla(37, 84%, 38%, 1);
+    --orange-yellow-crayola: hsla(39, 100%, 74%, 1);
+    --honey-yellow: hsla(40, 98%, 60%, 1);
+    --charcoal: hsla(207, 38%, 25%, 1);
+    --blue-sapphire: hsla(196, 67%, 33%, 1);
+    --spanish-blue: hsla(210, 63%, 43%, 1);
+    --bleu-de-france: hsla(210, 97%, 54%, 1);
+    --davys-grey: hsla(12, 5%, 36%, 1);
+    --light-gray: hsla(300, 4%, 81%, 1);
+    --white: hsla(225, 100%, 99%, 1);
+}
+@media only screen and (min-width: 415px){
+.main-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 200px 1fr;
+    overflow: hidden;
+}
+.sidebar {
+    height: 100%;
+    width: 300px;
+    background-color: var(--bleu-de-france);
+    grid-row: 1 / -1;
+}
+.header {
+    background-color: var(--white);
+    height: 100%;
+    width: 100%;
+    position: relative;
+    grid-row: 1 / 2;
+}
+.dashboard {
+    background-color: var(--light-gray);
+}
+}
