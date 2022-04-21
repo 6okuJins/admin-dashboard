@@ -10,6 +10,9 @@
     --light-gray: hsla(300, 4%, 81%, 1);
     --white: hsla(225, 100%, 99%, 1);
 }
+.sidebar label {
+    display:none;
+}
 @media only screen and (min-width: 415px){
 .main-container {
     height: 100vh;
