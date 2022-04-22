@@ -59,6 +59,7 @@
         border-top: 2px solid transparent;
         border-radius: 4px;
         transition: background-color 0.05s ease-in-out;
+        -webkit-transition: background-color 0.05s ease-in-out;
     }
     .sidebar button:active {
         background-color: rgba(255,255,255,0.5);
@@ -68,6 +69,7 @@
         height: 10px;
         width: 10px;
         transition: width 0.1s ease-in-out;
+        -webkit-transition: width 0.1s ease-in-out;
     }
     .sidebar button:active .border {
         width: 30px;
@@ -88,7 +90,7 @@
     }
 }
 
-}
+
 @media only screen and (min-width: 415px){
     .main-container {
         height: 100vh;
