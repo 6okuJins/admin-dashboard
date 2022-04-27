@@ -250,6 +250,16 @@
         background-color: var(--white);
         box-shadow: 3px 5px 20px -10px;
         padding: 30px;
+        overflow: hidden;
+    }
+    .project h1 {
+        font-family: Roboto;
+        font-weight: bold;
+
+    }
+    .project p {
+        font-family: Montserrat;
+        color: grey;
     }
     .tabs {
         display: none;
