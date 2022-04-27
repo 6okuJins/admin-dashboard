@@ -177,7 +177,7 @@
         display: grid;
         grid-template-columns: min-content auto;
         grid-auto-rows: min-content;
-        column-gap: 25px;
+        column-gap: 0px;
         row-gap: 10px;
     }
     .sidebar label {
@@ -190,14 +190,27 @@
         font-size: 1.4em;
         color: var(--white)
     }
-    .sidebar button {
-        margin-left: 20px;
-    }
-    .sidebar svg {
+    .sidebar button svg {
         height:  30px;
         width: 30px;
         fill: var(--white);
         stroke: var(--davys-grey)
+    }
+    .sidebar-logo {
+        display: flex;
+        align-items: center;
+        margin: 12px;
+        margin-bottom: 40px;
+        grid-column: 1 / -1;
+        font-family: Roboto;
+        font-weight: bold;
+        font-size: 2.5em;
+        color: var(--charcoal);
+    }
+    .sidebar-logo svg {
+        height: 60px;
+        width: 60px;
+        fill: var(--orange-yellow-crayola);
     }
 
     .header {
