@@ -231,7 +231,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fill, 400px);
         grid-template-rows: min-content;
-        grid-auto-rows: 200px;
+        grid-auto-rows: 250px;
         gap: 40px;
         padding: 20px;
     }
@@ -243,6 +243,7 @@
         margin-bottom: -30px;
         font-size: 20px;
         font-family: Roboto;
+        color: var(--davys-grey);
     }
     .project {
         border-left: 10px solid var(--orange-yellow-crayola);
@@ -251,6 +252,7 @@
         box-shadow: 3px 5px 20px -10px;
         padding: 30px;
         overflow: hidden;
+        position:relative;
     }
     .project h1 {
         font-family: Roboto;
@@ -260,6 +262,24 @@
     .project p {
         font-family: Montserrat;
         color: grey;
+    }
+    .project .button-cluster {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+    }
+    .project .button-cluster svg {
+        height: 25px;
+        width: 25px;
+        fill: var(--dark-grey);
+        transition: fill 0.05s ease-out;
+    }
+    .project .button-cluster button{
+    background-color: inherit;
+    border: none;
+    }
+    .project .button-cluster button:active svg {
+        fill: var(--orange-yellow-crayola);
     }
     .tabs {
         display: none;
