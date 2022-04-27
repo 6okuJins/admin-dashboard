@@ -69,11 +69,30 @@
         font-size: 2em;
         margin-bottom: 30px;
     }
-    .announcement-container {
-        padding: 20px;
+    /* dashboard > tabs */
+    .dashboard > .tabs {
+        flex: 1 0 auto;
+        display: inline;
+        align-items: start;
+        background-color: var(--white);
+        margin: 20px;
+        padding: 10px;
+        border-radius: 10px;
     }
-    .trending-container {
+    .tabs button {
+        font-family: Roboto;
+        font-size: 1em;
+        background-color: var(--white);
+        border: none;
+    }
+    .tabs .tab {
+        display: none;
+        margin-top: 20px;
         padding: 20px;
+        font-family: Montserrat;
+    }
+    .tabs .announcement-container {
+        display: block;
     }
     /* sidebar */
     .sidebar {
