@@ -174,7 +174,32 @@
         height: 100%;
         width: 300px;
         grid-row: 1 / -1;
+        display: grid;
+        grid-template-columns: min-content auto;
+        grid-auto-rows: min-content;
+        column-gap: 25px;
+        row-gap: 10px;
     }
+    .sidebar label {
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 7px;
+
+        font-family: Roboto;
+        font-weight: bold;
+        font-size: 1.4em;
+        color: var(--white)
+    }
+    .sidebar button {
+        margin-left: 20px;
+    }
+    .sidebar svg {
+        height:  30px;
+        width: 30px;
+        fill: var(--white);
+        stroke: var(--davys-grey)
+    }
+
     .header {
         background-color: var(--white);
         height: 100%;
