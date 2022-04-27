@@ -1,5 +1,8 @@
 const sidebarButtons = document.querySelectorAll(".sidebar button");
 sidebarButtons.forEach(button => button.addEventListener("click", (e) => {
+    if (window.innerWidth > 414) {
+        return
+    }
     while (document.querySelector(".sidebar .selected")) {
         document.querySelector(".sidebar .selected").classList.remove("selected");
     }
@@ -13,6 +16,9 @@ const tabButtons = document.querySelectorAll(".tabs > button");
 console.log(tabButtons);
 tabButtons.forEach(button => button.addEventListener('click', openTab));
 function openTab(e) {
+    if (window.innerWidth > 414) {
+        return
+    }
     const tabs = document.querySelectorAll('.tab');
     for (let i = 0; i < tabs.length; i++) {
         tabs[i].style.display = "none";
