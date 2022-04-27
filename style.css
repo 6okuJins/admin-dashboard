@@ -220,7 +220,38 @@
         position: relative;
         grid-row: 1 / 2;
     }
+    /* dashboard */
     .dashboard {
         background-color: var(--light-gray);
+    }
+    .dashboard-title {
+        display: none;
+    }
+    .project-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 400px);
+        grid-template-rows: min-content;
+        grid-auto-rows: 200px;
+        gap: 40px;
+        padding: 20px;
+    }
+    .project-container::before {
+        display:flex;
+        align-items: flex-end;
+        content: "Projects";
+        grid-column: 1 / -1 ;
+        margin-bottom: -30px;
+        font-size: 20px;
+        font-family: Roboto;
+    }
+    .project {
+        border-left: 10px solid var(--orange-yellow-crayola);
+        border-radius: 10px;
+        background-color: var(--white);
+        box-shadow: 3px 5px 20px -10px;
+        padding: 30px;
+    }
+    .tabs {
+        display: none;
     }
 }
