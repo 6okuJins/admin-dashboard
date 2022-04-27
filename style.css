@@ -84,6 +84,7 @@
         font-size: 1em;
         background-color: var(--white);
         border: none;
+        transition: font-size 0.1s ease-in-out
     }
     .tabs .tab {
         display: none;
@@ -91,8 +92,12 @@
         padding: 20px;
         font-family: Montserrat;
     }
-    .tabs .announcement-container {
+    .tabs .tab.announcements {
         display: block;
+    }
+    .tabs .selected {
+        font-weight: bold;
+        font-size:larger;
     }
     /* sidebar */
     .sidebar {
