@@ -1,1 +1,1 @@
-# A toy web project.
+# Preview: https://6okujins.github.io/admin-dashboard/
