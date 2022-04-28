@@ -1,4 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+@font-face {
+    font-family: Montserrat;
+    src: url(/assets/Fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(/assets/Fonts/Roboto/Roboto-Regular.ttf);
+}
 :root {
     --copper: hsla(37, 84%, 38%, 1);
     --orange-yellow-crayola: hsla(39, 100%, 74%, 1);
